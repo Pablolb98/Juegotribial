@@ -258,7 +258,7 @@ public class Juegotribial {
 					total -= puntos;
 					fallos ++;
 					break;
-			}
+					}
 			System.out.println("\nPREGUNTA 9: " + "\n¿Quien es el Rubius?: " + " \n1) Un presentador"
 					+ " \n2) Un informatico"
 					+ " \n3) Un youtuber"
@@ -283,6 +283,33 @@ public class Juegotribial {
 					total += puntos;
 					aciertos ++;
 					break;
+					}
+			
+			System.out.println("\nPREGUNTA 10: " + "\n¿Quien es el mejor maestro de DAW?: " + " \n1) Rafa"
+					+ " \n2) Fran"
+					+ " \n3) Joaquin"
+					+ " \nRespuesta: ");
+			
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+			
+			switch (num) {
+				case 1:
+					System.out.println("Incorrecto");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 2: 
+					System.out.println("El mejor master es Fran :PP");
+					total += puntos;
+					aciertos ++;
+					break;
+				case 3:
+					System.out.println("Incorrecto");
+					total -= puntos;
+					fallos ++;
+					break;
 			}
+			System.out.println("Has acumulado un total de " + total + " puntos");
 	}
 }
