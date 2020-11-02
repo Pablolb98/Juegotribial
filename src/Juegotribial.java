@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 public class Juegotribial {
@@ -15,13 +17,15 @@ public class Juegotribial {
 		
 		int num, puntos = 10, total = 0, aciertos = 0, fallos = 0;
 		
+		System.out.println("PREGUNTA 1" + "\n¿Cuantos lados tiene un cuadrado?: " + "\n1) 1"
+				+ "\n2) 2"
+				+ "\n3) 3"
+				+ "\n4) 4"
+				+ "\nRespuesta:");
 		
-		String str = JOptionPane.showInputDialog("Cuantos lados tiene un cuadrado" + "\n1) 1"
-		+ "\n2) 2"
-		+ "\n3) 3"
-		+ "\n4) 4");
-		num = Integer.parseInt(str);
-	
+			Scanner sc = new Scanner(System.in);
+			num = sc.nextInt();
+		
 		
 		switch (num) {
 			case 1:
@@ -46,5 +50,38 @@ public class Juegotribial {
 				break;
 			}
 		
+		System.out.println("PREGUNTA 2" + "¿Cuantos lados tiene un Triangulo?: " + "\n1) 1"
+		+ "\n2) 2"
+		+ "\n3) 3"
+		+ "\n4) 4");
+		
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+			
+			switch (num) {
+				case 1:
+					System.out.println("Intentelo de nuevo");
+					total -= puntos;
+					fallos ++;
+					break;
+					
+				case 2:
+					System.out.println("Intentelo de nuevo");
+					total -= puntos;
+					fallos ++;
+					break;
+					
+				case 3: 
+					System.out.println("Intentelo de nuevo");
+					total += puntos;
+					aciertos ++;
+					break;
+					
+				case 4: 
+					System.out.println("Intentelo de nuevo");
+					total -= puntos;
+					fallos ++;
+					break;
+			}
 	}
 }
