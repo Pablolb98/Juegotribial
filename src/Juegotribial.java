@@ -234,7 +234,31 @@ public class Juegotribial {
 					aciertos ++;
 					break;
 			}
+			System.out.println("\nPREGUNTA 8: " + "\n¿Juego mas jugado de PC?: " + " \n1) WOW"
+					+ " \n2) LOL"
+					+ " \n3) Fortnite"
+					+ " \nRespuesta: ");
 			
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+			
+			switch (num) {
+				case 1:
+					System.out.println("Nop, vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 2:
+					System.out.println("Has acertado, el LOL juego mas jugado de todos");
+					total += puntos;
+					aciertos ++;
+					break;
+				case 3: 
+					System.out.println("Nop, vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+			}
 			
 	}
 }
