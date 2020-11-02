@@ -193,20 +193,48 @@ public class Juegotribial {
 				aciertos ++;
 				break;
 			case 2:
-				System.out.println("Vuelve a intentarlo");
+				System.out.println("Incorrecto, vuelve a intentarlo");
 				total -= puntos;
 				fallos ++;
 				break;
 			case 3:
-				System.out.println("Vuelve a intentarlo");
+				System.out.println("Incorrecto, vuelve a intentarlo");
 				total -= puntos;
 				fallos ++;
 				break;
 			case 4:
-				System.out.println("Vuelve a intentarlo");
+				System.out.println("Incorrecto, vuelve a intentarlo");
 				total -= puntos;
 				fallos ++;
 				break;
 		}
+			System.out.println("\nPREGUNTA 7: " + "\n¿En que año sacaron la ps4?: " + " \n1) 2015"
+					+ " \n2) 2012"
+					+ " \n3) 2013"
+					+ " \nRespuesta: ");
+			
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+			
+			switch (num) {
+				case 1:
+					System.out.println("Incorrecto, vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+					
+				case 2: 
+					System.out.println("Incorrecto, vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 3: 
+					System.out.println("Has acetado, pasa a la siguiente pregunta");
+					total += puntos;
+					aciertos ++;
+					break;
+			}
+			
+			
 	}
 }
