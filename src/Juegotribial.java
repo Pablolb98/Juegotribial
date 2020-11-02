@@ -50,10 +50,11 @@ public class Juegotribial {
 				break;
 			}
 		
-		System.out.println("PREGUNTA 2" + "¿Cuantos lados tiene un Triangulo?: " + "\n1) 1"
+		System.out.println("PREGUNTA 2 " + "\n¿Cuantos lados tiene un Triangulo?: " + "\n1) 1"
 		+ "\n2) 2"
 		+ "\n3) 3"
-		+ "\n4) 4");
+		+ "\n4) 4"
+		+ "\nRespuesta: ");
 		
 			sc = new Scanner(System.in);
 			num = sc.nextInt();
@@ -72,7 +73,7 @@ public class Juegotribial {
 					break;
 					
 				case 3: 
-					System.out.println("Intentelo de nuevo");
+					System.out.println("Has acertado, pasas a la siguiente pregunta");
 					total += puntos;
 					aciertos ++;
 					break;
@@ -83,5 +84,99 @@ public class Juegotribial {
 					fallos ++;
 					break;
 			}
+			System.out.println("PREGUNTA 3: " + "\n¿Cuantos kilometros hay entre Aguilar y Lucena? " + "\n1) 20"
+					+ "\n2) 25"
+					+ "\n3) 30"
+					+ "\n4) 15"
+					+ "\nRespuesta: ");
+			
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+			
+			switch (num) {
+				case 1:
+					System.out.println("Enhorabuena! Has acertado, pasas a la siguiente pregunta ^-^");
+					total += puntos;
+					aciertos ++;
+					break;
+				case 2:
+					System.out.println("Has fallado, vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 3:
+					System.out.println("Has fallado, vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 4:
+					System.out.println("Has fallado, vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+			}
+			
+			System.out.println("PREGUNTA 4: " + "\n¿Cuanto mide la torre Eifel? " + "\n1) 50m" + "\n2) 100m"
+					+ "\n3) 300m"
+					+ "\n4) 400m");
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+			
+			
+			switch (num) {
+				case 1:
+					System.out.println("Intentalo de nuevo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 2:
+					System.out.println("Intentalo de nuevo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 3:
+					System.out.println("Enhorabuena! Has acertado");
+					total += puntos;
+					aciertos ++;
+					break;
+				case 4:
+					System.out.println("Has fallado");
+					total -= puntos;
+					fallos ++;
+					break;
+			}
+			
+			System.out.println("PREGUNTA 5: " + "\nDe que color el caballo blanco de Santiago: " + " \n1) Blanco"
+					+ " \n2) Negro"
+					+ " \n3) Marron"
+					+ " \n4) Gris"
+					+ "\nRespuesta: ");
+			
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+
+			switch (num) {
+				case 1: 
+					System.out.println("Enhorabuena! Has acertado");
+					total += puntos;
+					aciertos ++;
+					break;
+				case 2:
+					System.out.println("Vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 3:
+					System.out.println("Vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+				case 4:
+					System.out.println("Vuelve a intentarlo");
+					total -= puntos;
+					fallos ++;
+					break;
+			}
+			
 	}
 }
