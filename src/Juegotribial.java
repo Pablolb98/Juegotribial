@@ -48,6 +48,8 @@ public class Juegotribial {
 				total += puntos;
 				aciertos ++;
 				break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 			}
 		
 		System.out.println("\nPREGUNTA 2 " + "\n¿Cuantos lados tiene un Triangulo?: " + "\n1) 1"
@@ -83,6 +85,8 @@ public class Juegotribial {
 					total -= puntos;
 					fallos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 			}
 			System.out.println("\nPREGUNTA 3: " + "\n¿Cuantos kilometros hay entre Aguilar y Lucena? " + "\n1) 20"
 					+ "\n2) 25"
@@ -114,6 +118,8 @@ public class Juegotribial {
 					total -= puntos;
 					fallos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 			}
 			
 			System.out.println("\nPREGUNTA 4: " + "\n¿Cuanto mide la torre Eifel? " + "\n1) 50m" + "\n2) 100m"
@@ -144,6 +150,8 @@ public class Juegotribial {
 					total -= puntos;
 					fallos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 			}
 			
 			System.out.println("\nPREGUNTA 5: " + "\nDe que color el caballo blanco de Santiago: " + " \n1) Blanco"
@@ -176,6 +184,8 @@ public class Juegotribial {
 					total -= puntos;
 					fallos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 			}
 			
 			System.out.println("\nPREGUNTA 6: " + "\n¿Cuantas peliculas de Harry Potter existen?: " + " \n1) 8"
@@ -207,6 +217,8 @@ public class Juegotribial {
 				total -= puntos;
 				fallos ++;
 				break;
+			default:
+				System.out.println("Has introducido un valor incorrecto");
 		}
 			System.out.println("\nPREGUNTA 7: " + "\n¿En que año sacaron la ps4?: " + " \n1) 2015"
 					+ " \n2) 2012"
@@ -233,6 +245,8 @@ public class Juegotribial {
 					total += puntos;
 					aciertos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 			}
 			System.out.println("\nPREGUNTA 8: " + "\n¿Juego mas jugado de PC?: " + " \n1) WOW"
 					+ " \n2) LOL"
@@ -258,6 +272,8 @@ public class Juegotribial {
 					total -= puntos;
 					fallos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 					}
 			System.out.println("\nPREGUNTA 9: " + "\n¿Quien es el Rubius?: " + " \n1) Un presentador"
 					+ " \n2) Un informatico"
@@ -283,6 +299,8 @@ public class Juegotribial {
 					total += puntos;
 					aciertos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 					}
 			
 			System.out.println("\nPREGUNTA 10: " + "\n¿Quien es el mejor maestro de DAW?: " + " \n1) Rafa"
@@ -309,6 +327,8 @@ public class Juegotribial {
 					total -= puntos;
 					fallos ++;
 					break;
+				default:
+					System.out.println("Has introducido un valor incorrecto");
 			}
 			System.out.println("Has acumulado un total de " + total + " puntos");
 	}
