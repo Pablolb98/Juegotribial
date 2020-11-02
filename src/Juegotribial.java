@@ -50,7 +50,7 @@ public class Juegotribial {
 				break;
 			}
 		
-		System.out.println("PREGUNTA 2 " + "\n¿Cuantos lados tiene un Triangulo?: " + "\n1) 1"
+		System.out.println("\nPREGUNTA 2 " + "\n¿Cuantos lados tiene un Triangulo?: " + "\n1) 1"
 		+ "\n2) 2"
 		+ "\n3) 3"
 		+ "\n4) 4"
@@ -84,7 +84,7 @@ public class Juegotribial {
 					fallos ++;
 					break;
 			}
-			System.out.println("PREGUNTA 3: " + "\n¿Cuantos kilometros hay entre Aguilar y Lucena? " + "\n1) 20"
+			System.out.println("\nPREGUNTA 3: " + "\n¿Cuantos kilometros hay entre Aguilar y Lucena? " + "\n1) 20"
 					+ "\n2) 25"
 					+ "\n3) 30"
 					+ "\n4) 15"
@@ -116,7 +116,7 @@ public class Juegotribial {
 					break;
 			}
 			
-			System.out.println("PREGUNTA 4: " + "\n¿Cuanto mide la torre Eifel? " + "\n1) 50m" + "\n2) 100m"
+			System.out.println("\nPREGUNTA 4: " + "\n¿Cuanto mide la torre Eifel? " + "\n1) 50m" + "\n2) 100m"
 					+ "\n3) 300m"
 					+ "\n4) 400m");
 			sc = new Scanner(System.in);
@@ -146,7 +146,7 @@ public class Juegotribial {
 					break;
 			}
 			
-			System.out.println("PREGUNTA 5: " + "\nDe que color el caballo blanco de Santiago: " + " \n1) Blanco"
+			System.out.println("\nPREGUNTA 5: " + "\nDe que color el caballo blanco de Santiago: " + " \n1) Blanco"
 					+ " \n2) Negro"
 					+ " \n3) Marron"
 					+ " \n4) Gris"
@@ -178,5 +178,35 @@ public class Juegotribial {
 					break;
 			}
 			
+			System.out.println("\nPREGUNTA 6: " + "\n¿Cuantas peliculas de Harry Potter existen?: " + " \n1) 8"
+					+ " \n2) 7"
+					+ " \n3) 6"
+					+ " \nRespuesta: ");
+			
+			sc = new Scanner(System.in);
+			num = sc.nextInt();
+			
+			switch (num) {
+			case 1: 
+				System.out.println("Enhorabuena! Has acertado; Tiene 8 peliculas ya que la septima está dividida en 2 partes");
+				total += puntos;
+				aciertos ++;
+				break;
+			case 2:
+				System.out.println("Vuelve a intentarlo");
+				total -= puntos;
+				fallos ++;
+				break;
+			case 3:
+				System.out.println("Vuelve a intentarlo");
+				total -= puntos;
+				fallos ++;
+				break;
+			case 4:
+				System.out.println("Vuelve a intentarlo");
+				total -= puntos;
+				fallos ++;
+				break;
+		}
 	}
 }
